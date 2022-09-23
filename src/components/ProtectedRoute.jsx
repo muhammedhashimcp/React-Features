@@ -2,7 +2,7 @@ import React, { Children } from 'react'
 import { Navigate } from 'react-router-dom'
 import { UserAuth } from '../context/authContext'
 
-const Protected = ({children}) => {
+const ProtectedRoute = ({children}) => {
 	const { user } = UserAuth()
 	if (!user) {
 		return <Navigate to='/' />
@@ -10,4 +10,4 @@ const Protected = ({children}) => {
 	return children;
 }
 
-export default Protected
+export default ProtectedRoute
