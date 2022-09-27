@@ -1,10 +1,16 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import BasicDnd from './components/BasicDnd'
+import KanbanBoard from './components/KanbanBoard'
+import KanbanBoardDND from './components/KanbanBoardDND'
 
-function App() {
-	return <div className="App">
-	
-	</div>;
+const App = () => {
+  return (
+	<div>
+		  {/* <KanbanBoardDND /> */}
+		  {/* <KanbanBoard /> */}
+		  <BasicDnd/>
+	</div>
+  )
 }
 
-export default App;
+export default App
